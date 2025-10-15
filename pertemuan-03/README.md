@@ -1,7 +1,10 @@
-# pertemuan-02
-NIM : 2522500072
-Nama : Nuriza Rahmatullah
+# pertemuan-03
 
-Hari ini, Senin, 06 okt, 2025 kami belajar : <br>
-1)ternyata, struktur html tidak perlu ditulis lengkap karena browser punya eror tolarance, jadi kita bisa mudah mengerjakannya <br>
-2) emmet, ternyata ngetik kode jauh lebih cepat dan mudah digunakan
+NIM : 2522500072
+Nama :
+
+Pada hari selasa, 13 Oktober 2025, saya belajar copy paste
+<ol>
+<li>menggunakan file emmet.html pertemuan-02 untuk file index.html pertemuan-03</li>
+<li>membuat struktur form untuk section contact</li>
+</ol>
