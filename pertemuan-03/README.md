@@ -13,4 +13,6 @@ Pada hari selasa, 13 Oktober 2025, saya belajar copy paste
 <li>membuat styling untuk selector ID #about elemen strong</li>
 <li>membuat styling contact</li>
 <li>membuat styling contact h2</li>
+<li>membuat styling label</li>
+<li>membuat styling mode mobile</li>
 </ol>
