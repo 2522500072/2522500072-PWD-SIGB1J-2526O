@@ -14,8 +14,28 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: left;
     }
-  
-          #About h2 , #Contact h2 {
+    #About {
+        background: linear-gradient(45deg, #ff9ff3, #feca57, #54a0ff, #5f27cd);
+        background-size: 800% 800%;
+        animation: wave 5s ease infinite;}
+    @keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+   
+    #Contact {
+     background: linear-gradient(270deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+        animation: gerakWarna 4s ease infinite;
+        background-size: 800% 800%;
+ }
+    @keyframes gerakWarna {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+     
+      #About h2 , #Contact h2 {
         color: #000000;
         border-bottom: 2px solid #003366;
         padding-bottom: 6px;
@@ -23,6 +43,9 @@
         margin-bottom: 16px;
     }
     
+    #About h2, #Contact h2 {
+        font-size: 30px;}
+
       #About p , #Contact label {
         display: flex;
         justify-content: flex-start;
@@ -33,7 +56,7 @@
     
     }
 
- #About strong , #Contact label>span {
+     #About strong , #Contact label>span {
 
         min-width: 180px;
         color: black;
@@ -42,7 +65,8 @@
         padding-right: 16px;
         flex-shrink: 0;
     }
-@media (max-width: 600px) {
+
+     @media (max-width: 600px) {
         #About p, #Contact label {
             flex-direction: column;
             align-items: flex-start;
@@ -66,7 +90,7 @@
     margin: 0;
     box-sizing: border-box;
 }
- #Contact button {
+    #Contact button {
     margin-top: 10px;
     display: inline-block;
     padding: 10px 24px;
@@ -77,7 +101,8 @@
     transition: all 0.3s ease;
     margin-right: 8px;
     }
-    #Contact button[type="submit"]{
+
+  #Contact button[type="submit"]{
     background-color: #fafad2;
     color:#000000 ;
     font-weight: 600;
@@ -88,19 +113,22 @@
     color: #000000;
     font-weight: 600;
   }
-#Contact button[type="submit"]:hover {
+
+    #Contact button[type="submit"]:hover {
     background-color: #fffafa;
     transform: translateY(-1px);
     box-shadow: -5px -5px 10px grey ,
         5px 5px 10px black;
     }
-#Contact button[type="reset"]:hover {
+
+    #Contact button[type="reset"]:hover {
     background-color: #fffafa;
     transform: translateY(-1px);
         box-shadow: -5px -5px 10px grey ,
         5px 5px 10px black;
     }
- footer>p{
+ 
+    footer>p{
         text-align: center;
         background-color: black;
         color:white;
@@ -108,8 +136,6 @@
         border-radius:6px;
         padding:5px 5px;
      }
-
-
     </style>
 </head>
 <body>
