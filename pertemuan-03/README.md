@@ -15,4 +15,7 @@ Pada hari selasa, 13 Oktober 2025, saya belajar copy paste
 <li>membuat styling contact h2</li>
 <li>membuat styling label</li>
 <li>membuat styling mode mobile</li>
+<li>grouping about dan contact</li>
+<li>grouping about h2 dan contact h2</li>
+
 </ol>
