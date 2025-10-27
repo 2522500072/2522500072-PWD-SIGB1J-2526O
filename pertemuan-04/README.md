@@ -7,3 +7,4 @@ pada hari kamis 23 oktober 2025 saya belajar :
 <li>membuat file css</li>
 <li>membuat aturan css untuk body dan global reset"</li>
 <li>styling header</li>
+<li>styling section#home</li>
