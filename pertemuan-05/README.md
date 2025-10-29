@@ -8,3 +8,4 @@ Pada hari rabu 29 Oktober saya belajar Copy file
 <li>tombol humberger</li>
 <li>class menu-toggle</li>
 <li>class menu-toggle mode mobile</li>
+<li>styling nav mobile</li>
