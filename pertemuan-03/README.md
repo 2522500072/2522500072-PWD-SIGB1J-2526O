@@ -1,7 +1,7 @@
 # pertemuan-03
 
 NIM : 2522500072
-Nama : 
+Nama : Nuriza Rahmatullah
 
 Pada hari selasa, 13 Oktober 2025, saya belajar copy paste
 <ol>
