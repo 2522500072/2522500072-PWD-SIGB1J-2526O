@@ -10,3 +10,5 @@ Pada hari rabu 29 Oktober saya belajar Copy file
 <li>class menu-toggle mode mobile</li>
 <li>styling nav mobile</li>
 <li>styling nav menu mobile</li>
+<li>membuat script.js</li>
+<li>membuat interaksi script.js</li>
