@@ -16,4 +16,5 @@ hari ini saya belajar
 <li>perhitungan nilai akhir 4</li>
 <li>perhitungan nilai akhir 5</li>
 <li>membuat variabel bobot</li>
+<li>membuat perhitungan total bobot sks ipk</li>
 <ol>
