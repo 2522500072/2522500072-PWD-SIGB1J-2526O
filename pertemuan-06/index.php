@@ -372,7 +372,20 @@
         <hr>
         <hr>
 
-
+<h3>MataKuliah 5</h3>
+        <p><strong>Nama MataKuliah 5:</strong> <?php echo $namamatkul5; ?></p>
+        <p><strong>SKS:</strong> <?php echo $sksmatkul5; ?></p>
+        <p><strong>Kehadiran:</strong> <?php echo $nilaihadir5; ?></p>
+        <p><strong>Tugas:</strong> <?php echo $nilaitugas5; ?></p>
+        <p><strong>UTS:</strong> <?php echo $nilaiuts5; ?></p>
+        <p><strong>UAS:</strong> <?php echo $nilaiuas5; ?></p>
+         <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir5; ?></p>
+        <p><strong>Grade:</strong> <?php echo $grade5; ?></p>
+        <p><strong>Angka Mutu:</strong> <?php echo $mutu5; ?></p>
+        <p><strong>Bobot:</strong> <?php echo $bobot5; ?></p>
+        <p><strong>Status:</strong> <?php echo $status5; ?></p>
+        <hr>
+        <hr>
 
 
      <section id="Contact">
