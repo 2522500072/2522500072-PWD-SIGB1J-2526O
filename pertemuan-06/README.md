@@ -12,3 +12,5 @@ hari ini saya belajar
 <li>membuat variabel nilai akhir</li>
 <li>perhitungan nilai akhir 1</li>
 <li>perhitungan nilai akhir 2</li>
+<li>perhitungan nilai akhir 3</li>
+<ol>
