@@ -239,6 +239,34 @@
         }
 
 
+         if ($nilaihadir4 < 70){ 
+            $grade4 = "E";
+            $mutu4 = 0.00;
+            $status4 = "Gagal";
+        } else {
+            if ($nilaiAkhir4 >= 91) {
+                $grade4 = "A"; $mutu4 = 4.00; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 81) {
+                $grade4 = "A-"; $mutu4 = 3.70; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 76) {
+                $grade4 = "B+"; $mutu4 = 3.30; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 71) {
+                $grade4 = "B"; $mutu4 = 3.00; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 66) {
+                $grade4 = "B-"; $mutu4 = 2.70; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 61) {
+                $grade4 = "C+"; $mutu4 = 2.30; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 56) {
+                $grade4 = "C"; $mutu4 = 2.00; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 51) {
+                $grade4 = "C-"; $mutu4 = 1.70; $status4 = "Lulus";
+            } elseif ($nilaiAkhir4 >= 36) {
+                $grade4 = "D"; $mutu4 = 1.00; $status4 = "Gagal";
+            } elseif ($nilaiAkhir4>=0) {
+                $grade4 = "E"; $mutu4 = 0.00; $status4 = "Gagal";
+            }
+        }
+
 
      <section id="Contact">
         <h2>Kontak kami</h2>
