@@ -19,4 +19,5 @@ hari ini saya belajar
 <li>membuat perhitungan total bobot sks ipk</li>
 <li>grouping section ipk dengan about</li>
 <li>membuat data mata kuliah 1</li>
+<li>membuat data mata kuliah 2</li>
 <ol>
