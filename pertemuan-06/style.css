@@ -51,7 +51,7 @@ header li a:active {
 
 
 
-#About, #Contact, #Home {
+#About, #Contact, #Home, #ipk{
         border-radius: 10px;
         padding: 20px;
         max-width: 700px;
@@ -80,7 +80,7 @@ header li a:active {
   100% { background-position: 0% 50%; }
 }
      
-      #About h2 , #Contact h2, #Home h2 {
+      #About h2 , #Contact h2, #Home h2, #ipk h2 {
         color: #000000;
         border-bottom: 2px solid #003366;
         padding-bottom: 6px;
