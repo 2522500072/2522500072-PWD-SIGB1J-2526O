@@ -342,6 +342,21 @@
         <hr>
 
 
+        <h3>MataKuliah 3</h3>
+        <p><strong>Nama MataKuliah 3:</strong> <?php echo $namamatkul3; ?></p>
+        <p><strong>SKS:</strong> <?php echo $sksmatkul3; ?></p>
+        <p><strong>Kehadiran:</strong> <?php echo $nilaihadir3; ?></p>
+        <p><strong>Tugas:</strong> <?php echo $nilaitugas3; ?></p>
+        <p><strong>UTS:</strong> <?php echo $nilaiuts3; ?></p>
+        <p><strong>UAS:</strong> <?php echo $nilaiuas3; ?></p>
+         <p><strong>Nilai Akhir:</strong> <?php echo $nilaiAkhir3; ?></p>
+        <p><strong>Grade:</strong> <?php echo $grade3; ?></p>
+        <p><strong>Angka Mutu:</strong> <?php echo $mutu3; ?></p>
+        <p><strong>Bobot:</strong> <?php echo $bobot3; ?></p>
+        <p><strong>Status:</strong> <?php echo $status3; ?></p>
+        <hr>
+        <hr>
+
 
 
      <section id="Contact">

@@ -20,4 +20,5 @@ hari ini saya belajar
 <li>grouping section ipk dengan about</li>
 <li>membuat data mata kuliah 1</li>
 <li>membuat data mata kuliah 2</li>
+<li>membuat data mata kuliah 3</li>
 <ol>
