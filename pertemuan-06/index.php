@@ -94,6 +94,65 @@
         $nilaiAkhir5 = (0.1 * $nilaihadir5) + (0.2 * $nilaitugas5) + (0.3 * $nilaiuts5) + (0.4 * $nilaiuas5);
 
 
+        
+      
+        if ($nilaihadir1 < 70){ 
+                    $grade1="E";
+                    $mutu1="0.00";
+                    $status1="Gagal";
+                } else {
+                    if ($nilaiAkhir1>=91){
+                $grade1="A";
+                $mutu1=4.00;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=81){
+                $grade1="A-";
+                $mutu1=3.70;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=76){
+                $grade1="B+";
+                $mutu1=3.30;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=71){
+                $grade1="B";
+                $mutu1=3.00;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=66){
+                $grade1="B-";
+                $mutu1=2.70;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=61){
+                $grade1="C+";
+                $mutu1=2.30;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=56){
+                $grade1="C";
+                $mutu1=2.00;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=51){
+                $grade1="C-";
+                $mutu1=1.70;
+                $status1="Lulus";
+            } elseif 
+                ($nilaiAkhir1>=36){
+                $grade1="D";
+                $mutu1=1.00;
+                $status1="Gagal";
+            } elseif
+                ($nilaiAkhir1>=0){
+                $grade1="E";
+                $mutu1=0.00;
+                $status1="Gagal";
+            }
+        }
+
 
      <section id="Contact">
         <h2>Kontak kami</h2>

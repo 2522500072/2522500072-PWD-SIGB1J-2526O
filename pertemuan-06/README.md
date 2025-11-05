@@ -10,3 +10,4 @@ hari ini saya belajar
 <li>variabel data php about</li>
 <li>membuat variabel section nilai ipk</li>
 <li>membuat variabel nilai akhir</li>
+<li>perhitungan nilai akhir 1</li>
