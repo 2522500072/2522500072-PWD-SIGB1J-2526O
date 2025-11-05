@@ -6,4 +6,5 @@ hari ini saya belajar
 <li>copy item pertemuan-05 ke pertemuan-06</li>
 <li>membuat file php</li>
 <li>rename index.php</li>
+<li>membuat variabel section id about</li>
 </ol>

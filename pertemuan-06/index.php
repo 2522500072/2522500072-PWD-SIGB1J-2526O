@@ -26,19 +26,32 @@
         <p>Ini contoh paragraf HTML secara simpel.</p>
     </section>
     <section id="About">
+      <?php
+      $NIM="2522500072;"
+      $Nama="Nuriza Rahmatullah;"
+      $Tempatlahir="Jebus;"
+      $Tanggallahir="09 September 2006;"
+      $Hobi="Memasak;"
+      $Pasangan="Lajang;"
+      $Programstudi="Sistem Informasi;"
+      $Pekerjaan="Mahasiswa;"
+      $Namaayah="Suwanto;"
+      $Namaibu="Samsuriana;"
+      $Namakakak="An Nisa Pratiwi;"
+      $Namaadik="-;"
     <h2>Tentang Kami</h2>
-        <p><strong>Nim              : </strong>2522500072.</p>
-        <p><strong>Nama             : </strong>Nuriza Rahmatullah.</p>
-        <p><strong>Tempat Lahir     : </strong>Jebus.</p>
-        <p><strong>Tanggal Lahir    : </strong>09 September 2006.</p>
-        <p><strong>Hobi             : </strong>Memasak&#127858.</p>
-        <p><strong>Pasangan         : </strong>Lajang.</p>
-        <p><strong>Program Studi    : </strong>Sistem Informasi.</p>
-        <p><strong>Pekerjaan        : </strong>Mahasiswa&#128105;&#8205;&#127891.</p>
-        <p><strong>Nama Ayah        : </strong>Suwanto&#128525.</p>
-        <p><strong>Nama Ibu         : </strong>Samsuriana&#128525.</p>
-        <p><strong>Nama Kakak       : </strong>An Nisa Pratiwi.</p>
-        <p><strong>Nama Adik        : -. </p>
+        <p><strong>Nim              : </strong><?php echo $NIM; ?></p>
+        <p><strong>Nama             : </strong><?php echo $Nama; ?></p>
+        <p><strong>Tempat Lahir     : </strong><?php echo $Tanggallahir; ?></p>
+        <p><strong>Tanggal Lahir    : </strong><?php echo $Tanggallahir; ?></p>
+        <p><strong>Hobi             : </strong><?php echo $Hobi; ?></p>
+        <p><strong>Pasangan         : </strong><?php echo $Pasangan; ?></p>
+        <p><strong>Program Studi    : </strong><?php echo $Proramstudi; ?></p>
+        <p><strong>Pekerjaan        : </strong><?php echo $Pekerjaan; ?></p>
+        <p><strong>Nama Ayah        : </strong><?php echo $Namaayah; ?></p>
+        <p><strong>Nama Ibu         : </strong><?php echo $Namaibu; ?></p>
+        <p><strong>Nama Kakak       : </strong><?php echo $Namakakak; ?></p>
+        <p><strong>Nama Adik        : </strong><?php echo $Namaadik; ?></p>
     </section>
      <section id="Contact">
         <h2>Kontak kami</h2>
