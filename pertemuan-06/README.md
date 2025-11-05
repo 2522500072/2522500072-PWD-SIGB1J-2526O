@@ -17,5 +17,6 @@ hari ini saya belajar
 <li>perhitungan nilai akhir 5</li>
 <li>membuat variabel bobot</li>
 <li>membuat perhitungan total bobot sks ipk</li>
-<li>grouping section ipk dengan about dan data mata kuliah</li>
+<li>grouping section ipk dengan about</li>
+<li>membuat data mata kuliah 1</li>
 <ol>
