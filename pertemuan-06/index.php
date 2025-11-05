@@ -27,18 +27,19 @@
     </section>
     <section id="About">
       <?php
-      $NIM="2522500072;"
-      $Nama="Nuriza Rahmatullah;"
-      $Tempatlahir="Jebus;"
-      $Tanggallahir="09 September 2006;"
-      $Hobi="Memasak;"
-      $Pasangan="Lajang;"
-      $Programstudi="Sistem Informasi;"
-      $Pekerjaan="Mahasiswa;"
-      $Namaayah="Suwanto;"
-      $Namaibu="Samsuriana;"
-      $Namakakak="An Nisa Pratiwi;"
-      $Namaadik="-;"
+      $NIM="2522500072";
+      $Nama="Nuriza Rahmatullah";
+      $Tempatlahir="Jebus";
+      $Tanggallahir="09 September 2006";
+      $Hobi="Memasak";
+      $Pasangan="Lajang";
+      $Programstudi="Sistem Informasi";
+      $Pekerjaan="Mahasiswa";
+      $Namaayah="Suwanto";
+      $Namaibu="Samsuriana";
+      $Namakakak="An Nisa Pratiwi";
+      $Namaadik="-";
+      ?>
     <h2>Tentang Kami</h2>
         <p><strong>Nim              : </strong><?php echo $NIM; ?></p>
         <p><strong>Nama             : </strong><?php echo $Nama; ?></p>
@@ -46,7 +47,7 @@
         <p><strong>Tanggal Lahir    : </strong><?php echo $Tanggallahir; ?></p>
         <p><strong>Hobi             : </strong><?php echo $Hobi; ?></p>
         <p><strong>Pasangan         : </strong><?php echo $Pasangan; ?></p>
-        <p><strong>Program Studi    : </strong><?php echo $Proramstudi; ?></p>
+        <p><strong>Program Studi    : </strong><?php echo $Programstudi; ?></p>
         <p><strong>Pekerjaan        : </strong><?php echo $Pekerjaan; ?></p>
         <p><strong>Nama Ayah        : </strong><?php echo $Namaayah; ?></p>
         <p><strong>Nama Ibu         : </strong><?php echo $Namaibu; ?></p>

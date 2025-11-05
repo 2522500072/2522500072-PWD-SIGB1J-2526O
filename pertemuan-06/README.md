@@ -7,4 +7,5 @@ hari ini saya belajar
 <li>membuat file php</li>
 <li>rename index.php</li>
 <li>membuat variabel section id about</li>
+<li>variabel data php about</li>
 </ol>
