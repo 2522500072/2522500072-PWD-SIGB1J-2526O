@@ -8,4 +8,4 @@ hari ini saya belajar
 <li>rename index.php</li>
 <li>membuat variabel section id about</li>
 <li>variabel data php about</li>
-</ol>
+</ol>membuat variabel section nilai ipk</li>
