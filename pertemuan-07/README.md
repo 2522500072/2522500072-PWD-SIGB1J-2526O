@@ -6,4 +6,5 @@ NAMA    :Nuriza Rahmatullah
 hari ini, Kamis 06 Nov saya belajar :<br>
 <ol>
 <li>download+extract bahan latihan</li>
+<li>method, post, dan proses php</li>
 <ol>
