@@ -309,9 +309,9 @@
 
         ?>
 
-        <h2>nilai</h2>
+        <h2>Nilai</h2>
 
-         <h3>MataKuliah 1</h3>
+         <h3>Mata Kuliah 1</h3>
         <p><strong>Nama MataKuliah 1:</strong> <?php echo $namamatkul1; ?></p>
         <p><strong>SKS:</strong> <?php echo $sksmatkul1; ?></p>
         <p><strong>Kehadiran:</strong> <?php echo $nilaihadir1; ?> </p>
@@ -326,7 +326,7 @@
         <hr>
         <hr>
 
-        <h3>MataKuliah 2</h3>
+        <h3>Mata Kuliah 2</h3>
         <p><strong>Nama MataKuliah 2:</strong> <?php echo $namamatkul2; ?></p>
         <p><strong>SKS:</strong> <?php echo $sksmatkul2; ?></p>
         <p><strong>Kehadiran:</strong> <?php echo $nilaihadir2; ?></p>
@@ -342,7 +342,7 @@
         <hr>
 
 
-        <h3>MataKuliah 3</h3>
+        <h3>Mata Kuliah 3</h3>
         <p><strong>Nama MataKuliah 3:</strong> <?php echo $namamatkul3; ?></p>
         <p><strong>SKS:</strong> <?php echo $sksmatkul3; ?></p>
         <p><strong>Kehadiran:</strong> <?php echo $nilaihadir3; ?></p>
@@ -357,7 +357,7 @@
         <hr>
         <hr>
 
-        <h3>MataKuliah 4</h3>
+        <h3>Mata Kuliah 4</h3>
         <p><strong>Nama MataKuliah 4:</strong> <?php echo $namamatkul4; ?></p>
         <p><strong>SKS:</strong> <?php echo $sksmatkul4; ?></p>
         <p><strong>Kehadiran:</strong> <?php echo $nilaihadir4; ?></p>
@@ -372,7 +372,7 @@
         <hr>
         <hr>
 
-<h3>MataKuliah 5</h3>
+<h3>Mata Kuliah 5</h3>
         <p><strong>Nama MataKuliah 5:</strong> <?php echo $namamatkul5; ?></p>
         <p><strong>SKS:</strong> <?php echo $sksmatkul5; ?></p>
         <p><strong>Kehadiran:</strong> <?php echo $nilaihadir5; ?></p>
