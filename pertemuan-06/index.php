@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuriza</title>
+    <title>NURIZAAA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <ul>
             <li><a href="#Home">Beranda</a></li>
             <li><a href="#About">Tentang</a></li>
-            <li><a href="#Contact">Kontak</a></li>
+            <li><a href="#Ipk">Nilai</a></li>
           </ul>
     </nav>
   </header>
@@ -386,6 +386,16 @@
         <p><strong>Status:</strong> <?php echo $status5; ?></p>
         <hr>
         <hr>
+
+<H4>Total Keseluruhan</H4>
+        <P><strong>Total Bobot:</strong><?php echo $totalbobot; ?></P>
+        <p><strong>Total SKS:</strong><?php echo $totalsks; ?></p>
+        <p><strong>IPK:</strong><?php echo $ipk; ?></p> 
+
+
+
+
+
 
 
      <section id="Contact">

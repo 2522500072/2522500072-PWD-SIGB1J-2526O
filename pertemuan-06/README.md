@@ -23,4 +23,5 @@ hari ini saya belajar
 <li>membuat data mata kuliah 3</li>
 <li>membuat data mata kuliah 4</li>
 <li>membuat data mata kuliah 5</li>
+<li>styling css</li>
 <ol>

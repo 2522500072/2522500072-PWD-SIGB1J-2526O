@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: #003366;
+    background: #cc04a1;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -26,7 +26,7 @@ header ul {
 }
 
 header li a {
-    color: #fff;
+    color: #c07276;
     text-decoration: none;
     padding: 6px 12px;
 }
@@ -70,7 +70,7 @@ header li a:active {
 }
    
     #Contact {
-     background: linear-gradient(270deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+     background: linear-gradient(270deg, #ff6bb5, #feca57, #48dbfb, #1dd1a1);
         animation: gerakWarna 4s ease infinite;
         background-size: 800% 800%;
  }
@@ -79,9 +79,9 @@ header li a:active {
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-     
+  
       #About h2 , #Contact h2, #Home h2, #ipk h2 {
-        color: #000000;
+        color: #c07276;
         border-bottom: 2px solid #003366;
         padding-bottom: 6px;
         margin-top: 0;
@@ -218,33 +218,33 @@ header li a:active {
     }
 
   #Contact button[type="submit"]{
-    background-color: #fafad2;
+    background-color: #ff6bb5;
     color:#000000 ;
     font-weight: 600;
   }
 
   #Contact button[type="reset"]{
-    background-color: #ffffe0;
+    background-color: #ff6bb5;
     color: #000000;
     font-weight: 600;
   }
 
     #Contact button[type="submit"]:hover {
-    background-color: #fffafa;
+    background-color: #ff6bb5;
     transform: translateY(-1px);
     box-shadow: -5px -5px 10px grey ,
         5px 5px 10px black;
     }
 
     #Contact button[type="reset"]:hover {
-    background-color: #fffafa;
+    background-color: #ff6bb5;
     transform: translateY(-1px);
         box-shadow: -5px -5px 10px grey ,
         5px 5px 10px black;
     }
  
     footer {
-      background: #222;
+      background: #cc0472;
       color: #aaa;
         text-align: center;
         padding: 10px;
