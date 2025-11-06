@@ -1,3 +1,3 @@
 <?php
-echo "Nuriza"
+echo $_POST["txtNama"];
 ?>
