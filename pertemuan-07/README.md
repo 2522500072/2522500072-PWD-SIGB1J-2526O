@@ -13,5 +13,6 @@ hari ini, Kamis 06 Nov saya belajar :<br>
 <li>session proses.php dan index.php</li>
 <li>menambah variabel session untuk menentukan paragraf di index.php</li>
 <li>menambahkan file penghancur.php</li>
-<li>menambbahkan session start dan destory di file pennghancur.php</li>
+<li>menambahkan session start dan destory di file pennghancur.php</li>
+<li>menambahkan if dan endif pada form yang menghubungi</li>
 <ol>
