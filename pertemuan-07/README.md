@@ -11,5 +11,7 @@ hari ini, Kamis 06 Nov saya belajar :<br>
 <li>ambil nilai input dari form ke proses.php</li>
 <li>menyimpan nilai dari input ke variabel</li>
 <li>session proses.php dan index.php</li>
-<li>perintah form ke proses.php</li>
+<li>menambah variabel session untuk menentukan paragraf di index.php</li>
+<li>menambahkan file penghancur.php</li>
+<li>menambbahkan session start dan destory di file pennghancur.php</li>
 <ol>
