@@ -90,6 +90,12 @@ echo $sesnama, $sesemail, $sespesan;
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
+        <h2>Siapa kamu?, Yang menghubungi kami!<h2>
+          
+        <p><strong>Nama :</strong><?php echo $sesnama; ?> </p>
+        <p><strong>Email :</strong><?php echo $sesemail; ?> </p>
+        <p><strong>Pesan :</strong><?php echo $sespesan; ?> </p>
+
       </form>
     </section>
   </main>
