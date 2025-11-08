@@ -1,3 +1,22 @@
+<?php session_start();
+
+$sesnama="";
+if (isset($_SESSION["txtNama"])) :
+$sesnama = $_SESSION["txtNama"];
+endif;
+
+$sesemail="";
+if (isset($_SESSION["txtEmail"])) :
+$sesemail = $_SESSION["txtEmail"];
+endif;
+
+$sespesan="";
+if (isset($_SESSION["txtPesan"])) :
+$sespesan = $_SESSION["txtPesan"];
+endif;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
