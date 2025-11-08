@@ -6,5 +6,5 @@ $sespesan = $_POST["txtPesan"];
 $_SESSION["sesnama"] = $sesnama;
 $_SESSION["sesemail"] = $sesemail;
 $_SESSION["sespesan"] = $sespesan;
-
+header("Location: index.php");
 ?>
