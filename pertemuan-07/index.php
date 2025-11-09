@@ -29,7 +29,7 @@ endif;
 
 <body>
   <header>
-    <h1>Ini Header</h1>
+    <h1>Ini Nuriza</h1>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
       &#9776;
     </button>
@@ -100,13 +100,19 @@ endif;
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
-        <h2>Siapa kamu?, Yang menghubungi kami!<h2>
+</form>
+        <?php if(!empty($sesnama)): ?>
+        <h2>Siapa kamu?, Yang menghubungi kami!</h2>
           
         <p><strong>Nama :</strong><?php echo $sesnama; ?> </p>
+        <hr>
         <p><strong>Email :</strong><?php echo $sesemail; ?> </p>
+        <hr>
         <p><strong>Pesan :</strong><?php echo $sespesan; ?> </p>
+        <hr>
+<?php endif; ?>
 
-      </form>
+   
     </section>
   </main>
 

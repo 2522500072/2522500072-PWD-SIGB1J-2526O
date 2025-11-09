@@ -15,4 +15,5 @@ hari ini, Kamis 06 Nov saya belajar :<br>
 <li>menambahkan file penghancur.php</li>
 <li>menambahkan session start dan destory di file pennghancur.php</li>
 <li>menambahkan if dan endif pada form yang menghubungi</li>
+<li>memperbaiki file inde.php</li>
 <ol>
