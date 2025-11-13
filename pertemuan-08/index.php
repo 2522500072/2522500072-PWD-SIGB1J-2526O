@@ -36,6 +36,7 @@ endif;
     <nav>
       <ul>
         <li><a href="#home">Beranda</a></li>
+        <li><a href="#biodata">Biodata</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
@@ -52,14 +53,27 @@ endif;
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
+    <section id="biodata">
+      <h2>Biodata</h2>
+      <form action="proses.php" method="POST"
+        <label for="txtNama"><span>NIM:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan NIM" required autocomplete="name">
+        </label>
+
+        <label for="txtEmail"><span>Email:</span>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        </label>
+     
+</section>
+   
     <section id="about">
       <?php
       $nim = 2511500010;
-      $NIM = '0344300002';
+      $NIM = '2522500072';
       $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
       $tempat = "Jebus";
       ?>
+      
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong>
         <?php
@@ -71,14 +85,15 @@ endif;
         echo $Nama;
         ?> &#128526;
       </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+      <p><strong>Nama Lengkap:</strong> Nuriza Rahmatullah</p>
+      <p><strong>Tempat Lahir:</strong> Jebus $tempat; </p>
+      <p><strong>Tanggal Lahir:</strong> 09 September 2006</p>
+      <p><strong>Hobi:</strong> Memasak</p>
+      <p><strong>Pasangan:</strong> Lajang</p>
+      <p><strong>Pekerjaan:</strong> Mahasiswa</p>
+      <p><strong>Nama Orang Tua:</strong> Samsuriana dan Suwanto</p>
+      <p><strong>Nama Kakak:</strong> AN nisa Pratiwi</p>
+      <p><strong>Nama Adik:</strong> -<?php echo $sespesan ?></p>
     </section>
 
     <section id="contact">
