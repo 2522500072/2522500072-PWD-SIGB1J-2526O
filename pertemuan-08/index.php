@@ -56,14 +56,44 @@ endif;
     <section id="biodata">
       <h2>Biodata</h2>
       <form action="proses.php" method="POST"
-        <label for="txtNama"><span>NIM:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan NIM" required autocomplete="name">
+        <label for="txtNIM"><span>NIM:</span>
+          <input type="text" id="txtNIM" name="txtNIM" placeholder="Masukkan NIM" required autocomplete="name">
         </label>
-
+        <label for="txtNAMA"><span>Nama:</span>
+          <input type="text" id="txtNAMA" name="txtNAMA" placeholder="Masukkan NAMA" required autocomplete="name">
+        </label>
+<label for="txtTempat lahir"><span>tempat lahir:</span>
+          <input type="text" id="txt Tempat lahir" name="txtTempat Lahir" placeholder="Masukkan Tempat Lahir" required autocomplete="name">
+        </label>
+        <label for="txtTanggal lahir"><span>Tanggal lahir :</span>
+          <input type="text" id="txtTanggal lahir" name="txtTanggal lahir" placeholder="Masukkan Tanggal Lahir" required autocomplete="name">
+        </label>
+        <label for="txtHobi"><span>Hobi:</span>
+          <input type="text" id="txtHobi" name="txtNAMA" placeholder="Masukkan Hobi" required autocomplete="name">
+        </label>
+        <label for="txtPasangan"><span>Pasangan:</span>
+          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required autocomplete="name">
+        </label>
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="txtPekerjaan" name="txtPekerjaan" placeholder="Masukkan Pekerjaan" required autocomplete="name">
+        </label>
+        <label for="txtNama Orang tua"><span>Nama Orang tua:</span>
+          <input type="text" id="txtNama Orang tua" name="txtNama Orang tua" placeholder="Masukkan Nama Orang tua" required autocomplete="name">
+        </label>
+        <label for="txtNama Kakak"><span>Nama Kakak:</span>
+          <input type="text" id="txtNama Kakak" name="txtNama kakak" placeholder="Masukkan Nama Kakak" required autocomplete="name">
+        </label>
+        <label for="txtNama Adik"><span>Nama Adik:</span>
+          <input type="text" id="txtNama Kakak" name="txtNama Adik" placeholder="Masukkan Nama Adik" required autocomplete="name">
+        </label>
         <label for="txtEmail"><span>Email:</span>
           <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
         </label>
      
+
+         <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
 </section>
    
     <section id="about">
