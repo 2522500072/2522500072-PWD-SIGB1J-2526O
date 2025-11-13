@@ -50,6 +50,7 @@ header li a:active {
 }
 
 #home:target~header nav a[href="#home"],
+#biodata sederhana mahasiswa:target~header nav a[href="#biodata sederhana mahasiswa"],
 #about:target~header nav a[href="#about"],
 #contact:target~header nav a[href="#contact"] {
   background: #fff;
@@ -60,6 +61,7 @@ header li a:active {
 }
 
 #home,
+#biodata,
 #about,
 #contact {
   background-color: #ffffff;
@@ -72,27 +74,32 @@ header li a:active {
 
 #home h2,
 #about h2,
-#contact h2 {
-  color: #003366;
+#contact h2,
+#biodata h2{
+   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
   margin-top: 0;
   margin-bottom: 16px;
 }
 
+ 
+
 #home p {
   text-align: justify;
 }
 
 #about p,
-#contact label {
-  display: flex;
+#contact label,
+#biodata label {
+   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   margin: 0;
   padding: 6px 0;
   border-bottom: 1px solid #e6e6e6;
 }
+ 
 
 #about strong,
 #contact label>span {
