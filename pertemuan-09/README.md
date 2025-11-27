@@ -12,4 +12,5 @@
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>
+  <li>menambahkan bentuk array associative</li>
 </ol>
