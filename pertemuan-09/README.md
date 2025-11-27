@@ -16,4 +16,5 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan bentuk array associative</li>
   <li>mengubah session biodata</li>
   <li>menghapus baris kode 19-67 dan mengganti kode sebelum section#about</li>
+  <li>menambahkan kode php foreach</li>
 </ol>
