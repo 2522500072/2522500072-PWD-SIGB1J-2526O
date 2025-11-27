@@ -1,4 +1,5 @@
 # pertemuan-09
+hari ini, kamis 27 Nov 2025 kami belajar
 
 <ol>
   <li>Hasil UTS untuk bahan pertemuan-09</li>
