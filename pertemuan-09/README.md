@@ -14,4 +14,6 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>echo session ke nilai label section contact selesai</li>
   <li>
   <li>menambahkan bentuk array associative</li>
+  <li>mengubah session biodata</li>
+  <li>menghapus baris kode 19-67 dan mengganti kode sebelum section#about</li>
 </ol>
