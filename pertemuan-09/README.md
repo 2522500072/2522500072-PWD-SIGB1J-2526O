@@ -19,4 +19,5 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan kode php foreach</li>
   <li>menghapus kode pada baris 130-140 pada file index</li>
   <li>menambahkan file baru fungsi.php di pertemuan 09 dan menambahkan kode baru</li>
+  <li>menambahkan kode baru pada file fungsi.php</li>
 </ol>
