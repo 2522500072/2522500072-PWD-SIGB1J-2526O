@@ -23,6 +23,4 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan kode baru pada file fungsi.php</li>
   <li>menghapus kode 123-129 pada file index.php dan mengganti dengan kode baru</li>
   <li>menambahkan kode baru pada index.php</li>
-=======
->>>>>>> 5b011d52927b49e48d52b520f7b71e193c165213
 </ol>
