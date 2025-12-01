@@ -20,4 +20,5 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menghapus kode pada baris 130-140 pada file index</li>
   <li>menambahkan file baru fungsi.php di pertemuan 09 dan menambahkan kode baru</li>
   <li>menambahkan kode baru pada file fungsi.php</li>
+  <li>menghapus kode 123-129 pada file index.php dan mengganti dengan kode baru</li>
 </ol>
