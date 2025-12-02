@@ -24,4 +24,5 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan kode baru pada index.php</li>
   <li>menghapus kode pada baris 23-32 pada file index.php dan mengganti dengan kode baru</li>
   <li>menambahkan arrcontact</li>
+  <li>menambahkan session contact</li>
 </ol>
