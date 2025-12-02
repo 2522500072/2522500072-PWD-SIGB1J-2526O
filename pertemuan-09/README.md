@@ -28,4 +28,5 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan fieldcontact</li>
   <li>membuat function tampilkanContact</li>
   <li>menambahkan tampilkanContact dan FieldContact</li>
+  <li>mengubah variabel</li>
 </ol>
