@@ -112,7 +112,7 @@ endif;
         "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
         "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
         "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => " &copy; 2025"],
-        "orut" => ["label" => "Nama Orang Tua:", "suffix" => ""],
+        "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
         "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
         "adik" => ["label" => "Nama Adik:", "suffix" => ""],
       ];
