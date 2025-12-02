@@ -26,4 +26,6 @@ hari ini, kamis 27 Nov 2025 kami belajar
   <li>menambahkan arrcontact</li>
   <li>menambahkan session contact</li>
   <li>menambahkan fieldcontact</li>
+  <li>membuat function tampilkanContact</li>
+  <li>menambahkan tampilkanContact dan FieldContact</li>
 </ol>

@@ -128,23 +128,19 @@ require_once __DIR__ . '/fungsi.php';
           <button type="submit">Kirim</button>
           <button type="reset">Batal</button>
         </form>
-<?php
-$contact = $_SESSION["contact"] ?? [];
+        <?php
+        $contact = $_SESSION["contact"] ?? [];
 
-$fieldContact = [
-"nama" => ["label" => "Nama:", "suffix" => ""],
-"email" => ["label" => "Email:", "suffix" => ""],
-"pesan" => ["label" => "Pesan:", "suffix" => ""],
-    ];
-    ?>
-          <br>
-          <hr>
-          <h2>Yang menghubungi kami</h2>
-
-    
-
-
-
+        $fieldContact = [
+          "nama" => ["label" => "Nama:", "suffix" => ""],
+          "email" => ["label" => "Email:", "suffix" => ""],
+          "pesan" => ["label" => "Pesan:", "suffix" => ""],
+        ];
+        ?>
+        <br>
+        <hr>
+        <h2>Yang menghubungi kami</h2>
+        <?= tampilkanContact($fieldContact, $contact) ?>
       </section>
   </main>
 
