@@ -19,3 +19,4 @@ pada hari kamis 04 Desember 2025 saya belajar :
   <li>mengisi data pada form di mysql<li>
   <li>copy file read.php dan rename read_inc.php dan memodifikasi kode</li>
   <li>mengubah kode pada baris 146 di file index.php</li>
+  <li>memperbaiki kode</li>
