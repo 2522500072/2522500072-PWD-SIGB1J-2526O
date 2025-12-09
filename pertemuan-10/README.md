@@ -14,3 +14,5 @@ pada hari kamis 04 Desember 2025 saya belajar :
   <li>download zip dan mengextract</li>
   <li>membuat file koneksi.php</li>
   <li>membuka phpmyadmin dan membuat db baru</li>
+  <li>membuat table di mysql pada php.myadmin</li>
+  <li>membuat file baru yaitu read.php dan mengisi kode baru</li>
