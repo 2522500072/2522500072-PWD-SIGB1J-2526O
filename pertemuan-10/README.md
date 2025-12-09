@@ -13,3 +13,4 @@ pada hari kamis 04 Desember 2025 saya belajar :
   <li>echo session ke nilai label section contact selesai</li>
   <li>download zip dan mengextract</li>
   <li>membuat file koneksi.php</li>
+  <li>membuka phpmyadmin dan membuat db baru</li>
