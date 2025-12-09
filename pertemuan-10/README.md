@@ -16,3 +16,4 @@ pada hari kamis 04 Desember 2025 saya belajar :
   <li>membuka phpmyadmin dan membuat db baru</li>
   <li>membuat table di mysql pada php.myadmin</li>
   <li>membuat file baru yaitu read.php dan mengisi kode baru</li>
+  <li>mengisi data pada form di mysql<li>
