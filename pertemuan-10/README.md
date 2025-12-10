@@ -21,4 +21,5 @@ pada hari kamis 04 Desember 2025 saya belajar :
   <li>mengubah kode pada baris 146 di file index.php</li>
   <li>memperbaiki kode</li>
   <li>mengubah kode pada baris 146 di file index.php</li>
+  <li>mengexport file localhost.sql database</li>
   <li>copy item</li>
