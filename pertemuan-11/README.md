@@ -6,3 +6,4 @@ pada hari kamis 11 Desember 2025 saya belajar :
 <li>update fungsi.php</li>
 <li>menambahkan kode flash message dari session pada file index.php</li>
 <li>menambahkan kode baru flash message</li>
+<li>mengubah data yang ada untuk menampilkan nilai lama dari form pada index.php</li> 
