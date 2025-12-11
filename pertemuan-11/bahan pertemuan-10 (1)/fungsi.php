@@ -2,7 +2,7 @@
 function redirect_ke($url)
 {
   header("Location: " . $url);
-excit();
+exit();
 }
 
 function tidakKosong($str)

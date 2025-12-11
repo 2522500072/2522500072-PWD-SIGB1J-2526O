@@ -1,11 +1,47 @@
 <?php
 session_start();
 
-$arrContact = [
-  "nama" => $_POST["txtNama"] ?? "",
-  "email" => $_POST["txtEmail"] ?? "",
-  "pesan" => $_POST["txtPesan"] ?? ""
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  $_SESSION['flash_error'] = 'Akses tidak valid.';
+  redirect_ke('index.php#contact');
+ }
+
+ $nama  = bersihkan($_POST['txtnama'] ?? '');
+ $email = bersihkan($_POST['txtemail'] ?? '');
+ $pesan = bersihkan($_SESSION['txtpesan'] ?? '');
+
+
+ $errors = [];
+
+ if ($nama === '') {
+  $errors[] = 'Nama wajib diisi.';
+}
+
+if ($email === '') {
+  $errors[] = 'Email wajib diisi.';
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $errors[] = 'Format e-mail tidak valid.';
+}
+
+if ($pesan === '') {
+  $errors[] = 'Pesan wajib diisi.';
+}
+
+$arrContact = 
+"nama" =  $_POST["txtNama"] ?? "",
+"email" => $_POST["txtEmail"] ?? "",  "pesan" => $_POST["txtPesan"] ?? ""
 ];
+
+if (!empty($errors)) {
+  $_SESSION['old'] = [
+    'nama'  => $nama,
+    'Email' => $email,
+    'Pesan' => $pesan,
+  ];
+
+  $_SESSION['flash_error'] = implode('<br>', $errors);
+  redirect_ke('index.php#contact');
+}
 $_SESSION["contact"] = $arrContact;
 
 $arrBiodata = [
