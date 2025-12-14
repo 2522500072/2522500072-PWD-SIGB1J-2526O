@@ -1,8 +1,7 @@
 <?php
-function redirect_ke($url)
+function bersihkan($str)
 {
-  header("Location: " . $url);
-exit();
+  return htmlspecialchars(trim($str));
 }
 
 function tidakKosong($str)
@@ -26,4 +25,9 @@ function tampilkanBiodata($conf, $arr)
     $html .= "<p><strong>{$label}</strong> {$nilai}{$suffix}</p>";
   }
   return $html;
+}
+function redirect_ke($url)
+{
+  header("Location: " . $url);
+  exit();
 }
