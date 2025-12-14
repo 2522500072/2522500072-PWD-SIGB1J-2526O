@@ -9,3 +9,4 @@ pada hari kamis 11 Desember 2025 saya belajar :
 <li>mengubah data yang ada untuk menampilkan nilai lama dari form</li> 
 <li>rewrite proses.php</li>
 <li>memperbaiki kode yang salah pada proses.php</li>
+<li>menambahkan kode untuk menampilkan pada read.php</li>

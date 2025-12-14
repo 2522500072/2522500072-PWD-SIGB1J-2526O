@@ -145,12 +145,12 @@
               value="<?= isset($old['email']) ? htmlspecialchars($old['email']) : '' ?>">
           </label>
 
+          
           <label for="txtPesan"><span>Pesan Anda:</span>
             <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
               required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>
             <small id="charCount">0/200 karakter</small>
-        
-          
+
           </label>
 
           <button type="submit">Kirim</button>
