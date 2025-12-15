@@ -4,9 +4,9 @@ require_once "koneksi.php";
 require_once "fungsi.php";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    $_SESSION["error"] = "Akses tidak valid!";
-    redirect_ke('index.php#contact');
-    exit;
+  $_SESSION["error"] = "Akses tidak valid!";
+  redirect_ke('index.php#contact');
+  exit;
 }
 
 $nama  = bersihkan($_POST['txtNama'] ?? '');
@@ -15,24 +15,34 @@ $pesan = bersihkan($_POST['txtPesan'] ?? '');
 
 $eror = [];
 
+$captha = bersihkan($_POST['captcha'] ?? '');
+
+if ($captcha === "") {
+  $eror[] = 'Captcha wajib diisi!';
+} elseif ($captcha != 5) {
+  $eror[] = "Jawaban captcha salah!";
+}
+
 if ($nama === "") {
-    $eror[] = 'Nama wajib diisi!';
-}elseif (strlen($nama) < 3) {
+  $eror[] = 'Nama wajib diisi!';
+} elseif (strlen($nama) < 3) {
   $eror[] = "Nama minimal 3 karakter!";
 }
 
 if ($email === "") {
-    $eror[] = 'Email wajib diisi!';
+  $eror[] = 'Email wajib diisi!';
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $eror[] = 'Format email tidak valid!';
+  $eror[] = 'Format email tidak valid!';
 }
 if ($pesan === "") {
-    $eror[] = 'Pesan wajib diisi!'; 
+  $eror[] = 'Pesan wajib diisi!';
+} elseif (strlen($pesan) < 10) {
+  $eror[] = "Pesan minimal 10 karakter!";
 }
 
 if (!empty($eror)) {
-    $_SESSION["flash_error"] = implode('<br>', $eror);
-    redirect_ke('index.php#contact');
+  $_SESSION["flash_error"] = implode('<br>', $eror);
+  redirect_ke('index.php#contact');
 }
 
 
@@ -40,17 +50,16 @@ $sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
-    $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('index.php#contact');
-    
+  $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+  redirect_ke('index.php#contact');
 }
 
 mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
 
 if (mysqli_stmt_execute($stmt)) {
-    unset($_SESSION["old"]);
-    $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diterima.';
-    redirect_ke("index.php#contact");
+  unset($_SESSION["old"]);
+  $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diterima.';
+  redirect_ke("index.php#contact");
 } else {
   $_SESSION['old'] = [
     'nama' => $nama,
@@ -59,7 +68,6 @@ if (mysqli_stmt_execute($stmt)) {
   ];
   $_SESSION['sinar_error'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke("index.php#contact");
-
 }
 mysqli_stmt_close($stmt);
 

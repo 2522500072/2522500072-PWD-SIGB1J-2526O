@@ -11,3 +11,4 @@ pada hari kamis 11 Desember 2025 saya belajar :
 <li>memperbaiki kode yang salah pada proses.php</li>
 <li>menambahkan kode untuk menampilkan pada read.php</li>
 <li>menambahkan kode eror di proses.php</li>
+<li>menambahkan kode baru pada prose.php untuk captcha sederhana</li>
