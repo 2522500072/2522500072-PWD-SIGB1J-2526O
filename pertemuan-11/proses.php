@@ -12,10 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 $nama  = bersihkan($_POST['txtNama'] ?? '');
 $email = bersihkan($_POST['txtEmail'] ?? '');
 $pesan = bersihkan($_POST['txtPesan'] ?? '');
-
+$captcha = bersihkan($_POST['captcha'] ?? '');
 $eror = [];
-
-$captha = bersihkan($_POST['captcha'] ?? '');
 
 if ($captcha === "") {
   $eror[] = 'Captcha wajib diisi!';
@@ -66,7 +64,7 @@ if (mysqli_stmt_execute($stmt)) {
     'email' => $email,
     'pesan' => $pesan
   ];
-  $_SESSION['sinar_error'] = 'Data gagal disimpan. Silakan coba lagi.';
+  $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke("index.php#contact");
 }
 mysqli_stmt_close($stmt);
