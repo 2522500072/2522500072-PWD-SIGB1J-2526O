@@ -17,6 +17,8 @@ $eror = [];
 
 if ($nama === "") {
     $eror[] = 'Nama wajib diisi!';
+}elseif (strlen($nama) < 3) {
+  $eror[] = "Nama minimal 3 karakter!";
 }
 
 if ($email === "") {
