@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 10, 2025 at 12:15 PM
+-- Generation Time: Dec 15, 2025 at 01:32 PM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -34,17 +34,21 @@ CREATE TABLE `tbl_tamu` (
   `cid` int(11) NOT NULL,
   `cnama` varchar(100) DEFAULT NULL,
   `cemail` varchar(100) DEFAULT NULL,
-  `cpesan` text
+  `cpesan` text,
+  `dcreated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_tamu`
 --
 
-INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`) VALUES
-(1, 'Nuriza Rahatullah', '2522500072@mahasiswa.atmaluhur.ac.id', 'insyaAllah tidak typo heheheheheh'),
-(2, 'Nuriza Rahmatulla', 'nurizaaee@gmaiol.com', 'insyAllah enggak typo pak, aamiin'),
-(3, 'kepinn', 'kepinjiat@gmail.com', 'bismillah nggk ');
+INSERT INTO `tbl_tamu` (`cid`, `cnama`, `cemail`, `cpesan`, `dcreated_at`) VALUES
+(1, 'Nuriza Rahatullah', '2522500072@mahasiswa.atmaluhur.ac.id', 'insyaAllah tidak typo heheheheheh', '2025-12-15 20:29:00'),
+(2, 'Nuriza Rahmatulla', 'nurizaaee@gmaiol.com', 'insyAllah enggak typo pak, aamiin', '2025-12-15 20:29:00'),
+(3, 'kepinn', 'kepinjiat@gmail.com', 'bismillah nggk ', '2025-12-15 20:29:00'),
+(4, 'kjiioj', 'khailla@gmail.com', 'mniuoy8oy', '2025-12-15 20:29:00'),
+(5, 'nurizaee', 'nuri@gmail.com', 'bismillahhh', '2025-12-15 20:29:00'),
+(6, 'fffff', 'nuri@gmail.com', 'qwdwdwfwfwfwff', '2025-12-15 20:29:00');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +68,7 @@ ALTER TABLE `tbl_tamu`
 -- AUTO_INCREMENT for table `tbl_tamu`
 --
 ALTER TABLE `tbl_tamu`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

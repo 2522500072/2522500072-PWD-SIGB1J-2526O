@@ -110,24 +110,24 @@
       </section>
 
       <?php
-      $flash_sukses = $_SESSION['flash_sukses'] ?? '';
-      $flash_error = $_SESSION['flash_error'] ?? '';
-      $old = $_SESSION['old'] ?? [];
-      unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
+      $sinar_sukses = $_SESSION["sinar_sukses"] ?? '';
+      $sinar_error = $_SESSION["sinar_error"] ?? '';
+      $old = $_SESSION["old"] ?? [];
+      unset($_SESSION["sinar_sukses"], $_SESSION["sinar_error"], $_SESSION["old"]);
       ?>
 
       <section id="contact">
         <h2>Kontak Kami</h2>
 
-        <?php if (!empty($flash_sukses)): ?>
+        <?php if (!empty($sinar_sukses)): ?>
           <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
-            <?= $flash_sukses; ?>
+            <?= $sinar_sukses; ?>
           </div>
         <?php endif; ?>
 
-        <?php if (!empty($flash_error)): ?>
+        <?php if (!empty($sinar_error)): ?>
           <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-            <?= $flash_error; ?>
+            <?= $sinar_error; ?>
           </div>
         <?php endif; ?>
 
@@ -145,15 +145,15 @@
               value="<?= isset($old['email']) ? htmlspecialchars($old['email']) : '' ?>">
           </label>
 
-          
           <label for="txtPesan"><span>Pesan Anda:</span>
             <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
               required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>
             <small id="charCount">0/200 karakter</small>
+          </label>
 
-            <label for="captcha"><span>Berapa 2 + 3 ?</span>
+          <label for="captcha"><span>Berapa 2 + 3 ?</span>
             <input type="text" id="captcha" name="captcha"
-            placeholder="Jawaban Anda" required>
+              placeholder="Jawaban Anda" required>
           </label>
 
           <button type="submit">Kirim</button>
