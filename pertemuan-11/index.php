@@ -151,6 +151,9 @@
               required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>
             <small id="charCount">0/200 karakter</small>
 
+            <label for="captcha"><span>Berapa 2 + 3 ?</span>
+            <input type="text" id="captcha" name="captcha"
+            placeholder="Jawaban Anda" required>
           </label>
 
           <button type="submit">Kirim</button>
