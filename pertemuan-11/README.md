@@ -15,3 +15,4 @@ pada hari kamis 11 Desember 2025 saya belajar :
 <li>menambahkan kode baru di index.php untuk captcha sederhana</li>
 <li>menambahkan kode baru paada read.php untuk created at</li>
 <li>mengupgrade localhost</li>
+<li>mengupgrade kode baru di file read_inc.php</li>
