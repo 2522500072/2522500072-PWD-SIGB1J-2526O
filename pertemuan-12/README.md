@@ -12,4 +12,5 @@ pada hari kamis 18 Desember 2025 saya belajar :
 <li>membuat file baru yaitu proses_update.php<li>
 <li>menambahkan kode baru pada file proses_update.php</li>
 <li>melanjutkan menambahkan kode baru pada file proses_update.php</li>
+<li>perbaikan error pada file edit.php</li>
 <ol>
