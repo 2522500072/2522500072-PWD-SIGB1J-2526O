@@ -13,4 +13,5 @@ pada hari kamis 18 Desember 2025 saya belajar :
 <li>menambahkan kode baru pada file proses_update.php</li>
 <li>melanjutkan menambahkan kode baru pada file proses_update.php</li>
 <li>perbaikan error pada file edit.php</li>
+<li>perbaikan error pada file read.php</li>
 <ol>
