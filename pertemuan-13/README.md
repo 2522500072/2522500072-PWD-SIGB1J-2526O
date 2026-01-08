@@ -5,3 +5,4 @@ Pada hari kamis, 08 Januari 2026 saya belajar :
 <li>mengextract file pertemuan-13</li>
 <li>menghapus db_pwd2025 di php my admin</li>
 <li>mengimport file localhost di php my admin</li>
+<li>menambahkan kode baru berupa proses delete pada pertemuan-13</li>
