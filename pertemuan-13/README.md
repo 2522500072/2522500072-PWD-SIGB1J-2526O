@@ -7,3 +7,4 @@ Pada hari kamis, 08 Januari 2026 saya belajar :
 <li>mengimport file localhost di php my admin</li>
 <li>menambahkan kode baru berupa proses delete pada pertemuan-13</li>
 <li>membuat file baru yaitu proses_delete.php</li>
+<li>salin semua kode pada proses_update.php ke file proses_delete.php</li>
