@@ -7,4 +7,5 @@ Pada trout UAS ini saya belajar :
 <li>membuat file baru pertemuan-15</li>
 <li>copy kode pada read.php ke file red_biodata.php</li>
 <li>membuat file baru yaitu read_inc_biodata.php</li>
+<li>copy kode dari read_inc.php ke read_inc_biodata.php</li>
 <ol>
