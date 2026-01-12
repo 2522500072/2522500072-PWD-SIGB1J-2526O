@@ -12,4 +12,8 @@ Pada trout UAS ini saya belajar :
 <li>copy kode dari proses.php ke proses_biodata.php</li>
 <li>membuat file baru yaitu edit_biodata.php</li>
 <li>copy kode dari file edit.php ke edit_biodata.php</li>
+<li>membuat file baru yaitu proses_update_biodata.php</li>
+<li>copy kode file dari proses_update.php</li>
+<li>membuat file baru yaitu proses_delete_biodata.php</li>
+<li>copy kode dari file proses_delete.php</li>
 <ol>
