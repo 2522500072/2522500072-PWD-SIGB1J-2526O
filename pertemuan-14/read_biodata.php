@@ -36,24 +36,37 @@
     <th>No</th>
     <th>Aksi</th>
     <th>ID</th>
-    <th>Nama</th>
-    <th>Email</th>
-    <th>Pesan</th>
-    <th>Created At</th>
+    <th>NIM</th>
+    <th>Nama Lengkap</th>
+    <th>Tempat Lahir</th>
+    <th>Tanggal Lahir</th>
+    <th>Hobi</th>
+    <th>Pasangan</th>
+    <th>Pekerjaan</th>
+    <th>Nama Orang Tua</th>
+    <th>Nama Kakak</th>
+    <th>Nama adik</th>
   </tr>
   <?php $i = 1; ?>
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
       <td><?= $i++ ?></td>
       <td>
-        <a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="proses_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <a href="edit_biodata.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama_lengkap']); ?>?')" href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnama']); ?></td>
-      <td><?= htmlspecialchars($row['cemail']); ?></td>
-      <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-      <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
+      <td><?= htmlspecialchars($row['cnim']); ?></td>
+      <td><?= htmlspecialchars($row['cnama_lengkap']); ?></td>
+      <td><?= htmlspecialchars($row['ctempat_lahir']); ?></td>
+      <td><?= htmlspecialchars($row['ctanggal_lahir']); ?></td>
+      <td><?= htmlspecialchars($row['chobi']); ?></td>
+      <td><?= htmlspecialchars($row['cpasangan']); ?></td>
+      <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['cnama_orang_tua']); ?></td>
+      <td><?= htmlspecialchars($row['cnama_kakak']); ?></td>
+      <td><?= htmlspecialchars($row['cnama_adik']); ?></td>
+    
     </tr>
   <?php endwhile; ?>
 </table>
