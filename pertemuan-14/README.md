@@ -19,4 +19,5 @@ Pada tryout UAS ini saya belajar :
 <li>mengubah kode untuk read biodata selanjutnya</li>
 <li>menambahkan kode untuk read_inc_biodata.php</li>
 <li>memperbarui kode di read_inc_biodata.php</li>
+<li>menambahkan kode untuk menyesuaikan kode index.php</li>
 <ol>
