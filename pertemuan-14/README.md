@@ -1,6 +1,6 @@
 # pertemuan-15
 Nuriza Rahmatullah 2522500072
-Pada trout UAS ini saya belajar :
+Pada tryout UAS ini saya belajar :
 <ol>
 <li>extract file pertemuan-15</li>
 <li>membuat tabel di sql</li>
@@ -17,4 +17,5 @@ Pada trout UAS ini saya belajar :
 <li>membuat file baru yaitu proses_delete_biodata.php</li>
 <li>copy kode dari file proses_delete.php</li>
 <li>mengubah kode untuk read biodata selanjutnya</li>
+<li>menambahkan kode untuk read_inc_biodata.php</li>
 <ol>
