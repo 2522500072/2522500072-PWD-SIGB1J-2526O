@@ -36,12 +36,6 @@ if (!$q) {
 ];
 echo tampilkanBiodata($fieldConfig, $arrBiodata);
 
-    $arrContact = [
-      "nama"  => $row["cnama"]  ?? "",
-      "email" => $row["cemail"] ?? "",
-      "pesan" => $row["cpesan"] ?? "",
-    ];
-    echo tampilkanBiodata($fieldContact, $arrContact);
   }
 }
 ?>

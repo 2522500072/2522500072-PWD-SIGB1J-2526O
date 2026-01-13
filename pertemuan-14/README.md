@@ -18,4 +18,5 @@ Pada tryout UAS ini saya belajar :
 <li>copy kode dari file proses_delete.php</li>
 <li>mengubah kode untuk read biodata selanjutnya</li>
 <li>menambahkan kode untuk read_inc_biodata.php</li>
+<li>memperbarui kode di read_inc_biodata.php</li>
 <ol>
