@@ -70,8 +70,8 @@
 
   #Ambil error dan nilai old input kalau ada
   $flash_error = $_SESSION['flash_error'] ?? '';
-  $old_biodata = $_SESSION['old_biodata'] ?? [];
-  unset($_SESSION['flash_error'], $_SESSION['old']);
+  $old_biodata = $_SESSION['old_biodata'] ?? '';
+  unset($_SESSION['flash_error'], $_SESSION['old_biodata']);
   if (!empty($old_biodata)) {
     $nim  = $old_biodata['txtNim'] ?? $txtNim;
     $nama = $old_biodata['txtNmLengkap'] ?? $txtNmLengkap;
@@ -121,7 +121,7 @@
         <?php endif; ?>
         <form action="proses_update_biodata.php" method="POST">
 
-          <input type="text" name="cid" value="<?= (int)$cid; ?>">
+          <input type="hidden" name="cid" value="<?= (int)$cid; ?>">
 
           <label for="txtNim"><span>Nim:</span>
             <input type="text" id="txtNim" name="txtNim" 
@@ -171,7 +171,7 @@
               value="<?= !empty($ortu) ? $ortu : '' ?>">
           </label>
 
-          <label for="txtKakak"><span>Ortu:</span>
+          <label for="txtKakak"><span>Kakak:</span>
             <input type="text" id="txtKakak name="txtKakak"
               placeholder="Masukkan nama kakak" required autocomplete="kakak"
               value="<?= !empty($kakak) ? $kakak : '' ?>">

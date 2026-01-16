@@ -25,4 +25,5 @@ Pada tryout UAS ini saya belajar :
 <li>menambahkan kode untuk menyesuaikan kode di proses_delete_biodata.php</li>
 <li>menambahkan kode untuk menyesuaikan kode di edit_biodata.php</li>
 <li>memperbaiki kesalahan</li>
+<li>memperbaiki kode yang eror di file index.php</li>
 <ol>
