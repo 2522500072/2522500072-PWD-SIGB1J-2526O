@@ -39,7 +39,7 @@
     jika ada kesalahan, tampilkan penanda error.
   */
   $stmt = mysqli_prepare($conn, "SELECT cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi, cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik
-                                    FROM tbl_biodata_sederhana_mahasiswa WHERE cid = ? LIMIT 1");
+                                    FROM tbl_biodata_mahasiswa_sederhana WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('read_biodata.php');
@@ -70,19 +70,19 @@
 
   #Ambil error dan nilai old input kalau ada
   $flash_error = $_SESSION['flash_error'] ?? '';
-  $old = $_SESSION['old'] ?? [];
+  $old_biodata = $_SESSION['old_biodata'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old']);
-  if (!empty($old)) {
-    $nim  = $old['txtNim'] ?? $txtNim;
-    $nama = $old['txtNmLengkap'] ?? $txtNmLengkap;
-    $tempat = $old['txtT4Lhr'] ?? $txtT4Lhr;
-    $tanggal = $old['txtTglLhr'] ?? $txtTglLhr;
-    $hobi = $old['txtHobi'] ?? $txtHobi;
-    $pasangan = $old['txtPasangan'] ?? $txtPasangan;
-    $pekerjaan = $old['txtPekerjaan'] ?? $txtPekerjaan;
-    $ortu= $old['txtOrtu'] ?? $txtOrtu;
-    $kakak= $old['txtKakak'] ?? $txtKakak;
-    $adik= $old['txtAdik'] ?? $txtAdik;
+  if (!empty($old_biodata)) {
+    $nim  = $old_biodata['txtNim'] ?? $txtNim;
+    $nama = $old_biodata['txtNmLengkap'] ?? $txtNmLengkap;
+    $tempat = $old_biodata['txtT4Lhr'] ?? $txtT4Lhr;
+    $tanggal = $old_biodata['txtTglLhr'] ?? $txtTglLhr;
+    $hobi = $old_biodata['txtHobi'] ?? $txtHobi;
+    $pasangan = $old_biodata['txtPasangan'] ?? $txtPasangan;
+    $pekerjaan = $old_biodata['txtKerja'] ?? $txtKerja;
+    $ortu= $old_biodata['txtOrtu'] ?? $txtOrtu;
+    $kakak= $old_biodata['txtKakak'] ?? $txtKakak;
+    $adik= $old_biodata['txtAdik'] ?? $txtAdik;
     
   }
 ?>
@@ -111,7 +111,7 @@
     </header>
 
     <main>
-      <section id="contact">
+      <section id="biodata">
         <h2>Edit Buku Tamu</h2>
         <?php if (!empty($flash_error)): ?>
           <div style="padding:10px; margin-bottom:10px; 

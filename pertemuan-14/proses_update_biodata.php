@@ -70,17 +70,17 @@ if ($adik === '') {
   simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
   */
   if (!empty($errors)) {
-    $_SESSION['old'] = [
-    'nim'  => $nim,
-    'nama'  => $nama,
-    'tempat'  => $tempat,
-    'tanggal'  => $tanggal,
-    'hobi'  => $hobi,
-    'pasangan'  => $pasangan,
-    'pekerjaan'  => $pekerjaan,
-    'ortu'  => $ortu,
-    'kakak'  => $kakak,
-    'adik'  => $adik
+    $_SESSION['old_biodata'] = [
+    'txtNim'  => $nim,
+    'txtNmLengkap'  => $nama,
+    'txtT4Lhr'  => $tempat,
+    'txtTanggal'  => $tanggal,
+    'txtHobi'  => $hobi,
+    'txtPasangan'  => $pasangan,
+    'txtKerja'  => $pekerjaan,
+    'txtOrtu'  => $ortu,
+    'txtKakak'  => $kakak,
+    'txtAdik'  => $adik
     
   ];
     $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -92,7 +92,7 @@ if ($adik === '') {
     menyiapkan query UPDATE dengan prepared statement 
     (WAJIB WHERE cid = ?)
   */
-  $stmt = mysqli_prepare($conn, "UPDATE tbl_tbl_biodata_sederhana_mahasiswa
+  $stmt = mysqli_prepare($conn, "UPDATE tbl_biodata_mahasiswa_sederhana
                                 SET cnim = ?, cnama_lengkap = ?, ctempat_lahir = ?, ctanggal_lahir = ?, chobi = ?, cpasangan = ?, cpekerjaan = ?, cnama_orang_tua = ?, cnama_kakak = ?, cnama_adik = ?
                                 WHERE cid = ?");
   if (!$stmt) {
@@ -105,24 +105,24 @@ if ($adik === '') {
   mysqli_stmt_bind_param($stmt, "ssssssssss",$nim, $nama, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik);
 
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
-    unset($_SESSION['old']);
+    unset($_SESSION['old_biodata']);
     /*
       Redirect balik ke read.php dan tampilkan info sukses.
     */
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
     redirect_ke('read_biodata.php'); #pola PRG: kembali ke data dan exit()
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
-    $_SESSION['old'] = [
-      'nim'  => $nim,
-    'nama' => $nama,
-    'tempat' => $tempat,
-    'tanggal' => $tanggal,
-    'hobi' => $hobi,
-    'pasangan' => $pasangan,
-    'pekerjaan' => $pekerjaan,
-    'ortu' => $ortu,
-    'kakak' => $kakak,
-    'adik' => $adik
+    $_SESSION['old_biodata'] = [
+    'txtNim'  => $nim,
+    'txtNmLengkap' => $nama,
+    'txtT4Lhr' => $tempat,
+    'txtTanggal' => $tanggal,
+    'txtHobi' => $hobi,
+    'txtPasangan' => $pasangan,
+    'txtKerja' => $pekerjaan,
+    'txtOrtu' => $ortu,
+    'txtKakak' => $kakak,
+    'txtAdik' => $adik
     ];
     $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
     redirect_ke('edit_biodata.php?cid='. (int)$cid);

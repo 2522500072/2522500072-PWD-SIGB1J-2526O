@@ -40,9 +40,9 @@ require_once __DIR__ . '/fungsi.php';
 <?php
     $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
     $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
-    $old          = $_SESSION['old'] ?? []; #untuk nilai lama form
+    $old_biodata          = $_SESSION['old_biodata'] ?? []; #untuk nilai lama form
 
-    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']); #bersihkan 3 session ini
+    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old_biodata']); #bersihkan 3 session ini
     ?>
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
@@ -108,7 +108,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
+      <?php include 'read_inc_biodata.php' ?>
     </section>
 
     <?php
@@ -160,7 +160,7 @@ require_once __DIR__ . '/fungsi.php';
             value="<?= isset($old['captcha']) ? htmlspecialchars($old['captcha']) : '' ?>">
         </label>
 
-        <button type=" submit">Kirim</button>
+        <button type="submit">Kirim</button>
           <button type="reset">Batal</button>
       </form>
 

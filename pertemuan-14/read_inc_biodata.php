@@ -14,7 +14,7 @@ require 'koneksi.php';
       "adik" => ["label" => "Nama Adik:", "suffix" => ""],
     ];
 
-$sql = "SELECT * FROM tbl_biodata_sederhana_mahasiswa ORDER BY cid DESC";
+$sql = "SELECT * FROM tbl_biodata_mahasiswa_sederhana ORDER BY cid DESC";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
   echo "<p>Gagal membaca data tamu: " . htmlspecialchars(mysqli_error($conn)) . "</p>";

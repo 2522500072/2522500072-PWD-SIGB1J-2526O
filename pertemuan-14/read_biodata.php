@@ -3,7 +3,7 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
+  $sql = "SELECT * FROM tbl_biodata_mahasiswa_sederhana ORDER BY cid DESC";
   $q = mysqli_query($conn, $sql);
   if (!$q) {
     die("Query error: " . mysqli_error($conn));
@@ -56,7 +56,7 @@
         <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama_lengkap']); ?>?')" href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnim']); ?></td>
+      <td><?= htmlspecialchars($row>['cnim']); ?></td>
       <td><?= htmlspecialchars($row['cnama_lengkap']); ?></td>
       <td><?= htmlspecialchars($row['ctempat_lahir']); ?></td>
       <td><?= htmlspecialchars($row['ctanggal_lahir']); ?></td>
@@ -65,7 +65,7 @@
       <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
       <td><?= htmlspecialchars($row['cnama_orang_tua']); ?></td>
       <td><?= htmlspecialchars($row['cnama_kakak']); ?></td>
-      <td><?= htmlspecialchars($row['cnama_adik']); ?></td>
+      <td><?= htmlspecialchars($row['cnama_adik']); ?></td
     
     </tr>
   <?php endwhile; ?>
