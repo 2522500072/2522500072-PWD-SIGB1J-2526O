@@ -27,4 +27,5 @@ Pada tryout UAS ini saya belajar :
 <li>memperbaiki kesalahan</li>
 <li>memperbaiki kode yang eror di file index.php</li>
 <li>perbaikan kode yang eror</li>
+<li>perbaikan kode eror</li>
 <ol>
