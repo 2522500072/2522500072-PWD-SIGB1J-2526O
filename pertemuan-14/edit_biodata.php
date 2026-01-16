@@ -38,7 +38,8 @@
     Ambil data lama dari DB menggunakan prepared statement, 
     jika ada kesalahan, tampilkan penanda error.
   */
-  $stmt = mysqli_prepare($conn, "SELECT cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi, cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik
+  $stmt = mysqli_prepare($conn, "SELECT cid, cnim, cnama_lengkap,	ctempat_lahir,	ctanggal_lahir,chobi,	cpasangan,	cpekerjaan,	cnama_orang_tua,	cnama_kakak,	cnama_adik	
+
                                     FROM tbl_biodata_mahasiswa_sederhana WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
@@ -57,33 +58,33 @@
   }
 
   #Nilai awal (prefill form)
-    $nim =  $row['cnim']?? '';
-    $nama = $row['cnama_lengkap']??'';
-    $tempat = $row['ctempat_lahir']??'';
-    $tanggal = $row['ctanggal_lahir']??'';
-    $hobi = $row['chobi']??'';
-    $pasangan = $row['cpasangan']??'';
-    $pekerjaan = $row['cpekerjaan']??'';
-    $ortu = $row['cnama_orang_tua']??'';
-    $kakak = $row['cnama_kakak']??'';
-    $adik = $row['cnama_adik']??'';
+  $nim  = $row['cnim'] ?? '';
+  $nama = $row['cnama_lengkap'] ?? '';
+  $tempat = $row['ctempat_lahir'] ?? '';
+  $tanggal = $row['ctanggal_lahir'] ?? '';
+  $hobi = $row['chobi'] ?? '';
+  $pasangan = $row['cpasangan'] ?? '';
+  $pekerjaan = $row['cpekerjaan'] ?? '';
+  $ortu = $row['cnama_orang_tua'] ?? '';
+  $kakak = $row['cnama_kakak'] ?? '';
+  $adik = $row['cnama_adik'] ?? '';
 
   #Ambil error dan nilai old input kalau ada
   $flash_error = $_SESSION['flash_error'] ?? '';
-  $old_biodata = $_SESSION['old_biodata'] ?? '';
+  $old_biodata = $_SESSION['old_biodata'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old_biodata']);
   if (!empty($old_biodata)) {
-    $nim  = $old_biodata['txtNim'] ?? $txtNim;
-    $nama = $old_biodata['txtNmLengkap'] ?? $txtNmLengkap;
-    $tempat = $old_biodata['txtT4Lhr'] ?? $txtT4Lhr;
-    $tanggal = $old_biodata['txtTglLhr'] ?? $txtTglLhr;
-    $hobi = $old_biodata['txtHobi'] ?? $txtHobi;
-    $pasangan = $old_biodata['txtPasangan'] ?? $txtPasangan;
-    $pekerjaan = $old_biodata['txtKerja'] ?? $txtKerja;
-    $ortu= $old_biodata['txtOrtu'] ?? $txtOrtu;
-    $kakak= $old_biodata['txtKakak'] ?? $txtKakak;
-    $adik= $old_biodata['txtAdik'] ?? $txtAdik;
-    
+
+    $nim = $old_biodata['txtNim']?? $txtNim;
+    $nama = $old_biodata['txtNmLengkap']?? $txtNmLengkap;
+    $tempat = $old_biodata['txtT4Lhr']?? $txtT4Lhr;
+    $tanggal = $old_biodata['txtTglLhr']?? $txtTglLhr;
+    $hobi = $old_biodata['txtHobi']?? $txtHobi;
+    $pasangan = $old_biodata['txtPasangan']?? $txtPasangan;
+    $pekerjaan = $old_biodata['txtKerja']?? $txtKerja;
+    $ortu = $old_biodata['txtNmOrtu']?? $txtNmOrtu;
+    $kakak = $old_biodata['txtNmKakak']?? $txtNmKakak;
+    $adik = $old_biodata['txtNmAdik']?? $txtNmAdik;
   }
 ?>
 
@@ -123,62 +124,60 @@
 
           <input type="hidden" name="cid" value="<?= (int)$cid; ?>">
 
-          <label for="txtNim"><span>Nim:</span>
+          <label for="txtNim"><span>NIM:</span>
             <input type="text" id="txtNim" name="txtNim" 
               placeholder="Masukkan nim" required autocomplete="nim"
               value="<?= !empty($nim) ? $nim : '' ?>">
           </label>
 
-      <label for="txtNmLengkap"><span>Nama:</span>
+          <label for="txtNmLengkap"><span>Nama Lengkap:</span>
             <input type="text" id="txtNmLengkap" name="txtNmLengkap" 
-              placeholder="Masukkan nama lengkap" required autocomplete="nama"
+              placeholder="Masukkan nama lengkap anda" required autocomplete="nama"
               value="<?= !empty($nama) ? $nama : '' ?>">
           </label>
-
-        <label for="txtT4Lhr"><span>Tempat:</span>
+          <label for="txtT4Lhr"><span>Tempat Lahir:</span>
             <input type="text" id="txtT4Lhr" name="txtT4Lhr" 
               placeholder="Masukkan tempat lahir" required autocomplete="tempat"
               value="<?= !empty($tempat) ? $tempat : '' ?>">
           </label>
-
-       <label for="txtTglLhr"><span>Tanggal:</span>
+          <label for="txtTglLhr"><span>Tanggal Lahir:</span>
             <input type="text" id="txtTglLhr" name="txtTglLhr" 
               placeholder="Masukkan tanggal lahir" required autocomplete="tanggal"
               value="<?= !empty($tanggal) ? $tanggal : '' ?>">
           </label>
 
           <label for="txtHobi"><span>Hobi:</span>
-            <input type="text" id="txtHobi name="txtHobi" 
-              placeholder="Masukkan hobi" required autocomplete="hobi"
+            <input type="text" id="txtHobi" name="txtHobi" 
+              placeholder="Masukkan hobi anda ya" required autocomplete="hobi"
               value="<?= !empty($hobi) ? $hobi : '' ?>">
-          </label>
-
-          <label for="txtPasangan"><span>Pasangan:</span>
-            <input type="text" id="txtPasangan name="txtPasangan" 
-              placeholder="Masukkan pasangan" required autocomplete="pasangan"
-              value="<?= !empty($pasangan) ? $pasangan : '' ?>">
-          </label>
+        </label>
 
           <label for="txtKerja"><span>Pekerjaan:</span>
-            <input type="text" id="txtKerja name="txtKerja" 
-              placeholder="Masukkan pekerjaan" required autocomplete="pekerjaan"
+            <input type="text" id="txtKerja" name="txtKerja" 
+              placeholder="Masukkan Pekerjaan" required autocomplete="pekerjaan"
               value="<?= !empty($pekerjaan) ? $pekerjaan : '' ?>">
           </label>
 
-          <label for="txtOrtu"><span>Ortu:</span>
-            <input type="text" id="txtOrtu name="txtOrtu" 
-              placeholder="Masukkan nama orang tua" required autocomplete="ortu"
+          <label for="txtPasangan"><span>Nama Lengkap:</span>
+            <input type="text" id="txtPasangan" name="txtPasangan" 
+              placeholder="Masukkan pasangan" required autocomplete="pasangan"
+              value="<?= !empty($pasangan) ? $pasangan : '' ?>">
+          </label>
+          
+          <label for="txtNmOrtu"><span>Nama orang tua:</span>
+            <input type="text" id="txtNmOrtu" name="txtNmOrtu" 
+              placeholder="Masukkan orang tua" required autocomplete="ortu"
               value="<?= !empty($ortu) ? $ortu : '' ?>">
           </label>
 
-          <label for="txtKakak"><span>Kakak:</span>
-            <input type="text" id="txtKakak name="txtKakak"
+          <label for="txtNmKakak"><span>Nama kakak:</span>
+            <input type="text" id="txtNmKakak" name="txtNmKakak" 
               placeholder="Masukkan nama kakak" required autocomplete="kakak"
               value="<?= !empty($kakak) ? $kakak : '' ?>">
           </label>
 
-          <label for="txtAdik"><span>Adik:</span>
-            <input type="text" id="txtAdik name="txtAdik"
+          <label for="txtNmAdik"><span>Nama Adik:</span>
+            <input type="text" name="txtNmAdik" 
               placeholder="Masukkan nama adik" required autocomplete="adik"
               value="<?= !empty($adik) ? $adik : '' ?>">
           </label>
