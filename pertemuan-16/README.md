@@ -11,6 +11,7 @@ Pada UAS hari kamis, 29 Januari 2026 saya belajar :
 <li>membuat file read_pengunjung</li>
 <li>membuat file red_inc_pengunjung</li>
 <li>membuat file proses_pengunjung</li>
+<li>copy kode dari edit_biodata.php ke file edit_pengunjung.php</li>
 
 
 
