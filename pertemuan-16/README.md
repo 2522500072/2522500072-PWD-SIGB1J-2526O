@@ -25,6 +25,7 @@ Pada UAS hari kamis, 29 Januari 2026 saya belajar :
 <li>menambahkan kode untuk menyesuaikan kode pada file proses_pengunjung.php</li>
 <li>menambahkan kode yang ada pada file proses_pengunjung.php</li>
 <li>menambahkan kode yang ada di edit_pengunjung.php</li>
+<li>menambahkan kode yang ada di read_pengunjung.php</li>
 <ol>
 
 
