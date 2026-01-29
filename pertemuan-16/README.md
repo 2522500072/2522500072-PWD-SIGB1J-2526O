@@ -19,6 +19,7 @@ Pada UAS hari kamis, 29 Januari 2026 saya belajar :
 <li>menambahkan kode untuk menyesuaikan kode pada file proses_update_pengunjung.php</li>
 <li>copy kode yang ada pada file read_biodata.php ke file read_pengunjung.php</li>
 <li>menmbahkan kode untuk menyesuaikan kode pada file read_pengunjung.php</li>
+<li>copy kode yang ada pada file read_inc_biodata.php ke file read_inc_pengunjung.php</li>
 
 
 
