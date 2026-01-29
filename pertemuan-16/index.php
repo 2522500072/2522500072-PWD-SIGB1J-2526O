@@ -88,7 +88,7 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <?php
-    $biodata = $_SESSION["biodata"] ?? [];
+    $biodata = $_SESSION["pengunjung"] ?? [];
 
     $fieldConfig = [
       "kodepen" => ["label" => "Kode Pengunjung:", "suffix" => ""],
@@ -106,7 +106,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
+      <?= tampilkanPengunjung($fieldConfig, $biodata) ?>
     </section>
 
     <?php

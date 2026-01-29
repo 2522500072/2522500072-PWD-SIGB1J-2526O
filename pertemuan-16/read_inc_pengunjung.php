@@ -20,9 +20,9 @@ if (!$q) {
   echo "<p>Gagal membaca data tamu: " . htmlspecialchars(mysqli_error($conn)) . "</p>";
 } elseif (mysqli_num_rows($q) === 0) {
   echo "<p>Belum ada data tamu yang tersimpan.</p>";
-} else {
+} else 
   while ($row = mysqli_fetch_assoc($q)) {
-    $arrBiodata = [
+    $arrPengunjung = [
       "kodepen" => $row["nkode_pengunjung"],
       "nama" => $row["nnama_pengunjung"],
       "alamat" => $row["nalamat_pengunjung"],
@@ -34,6 +34,6 @@ if (!$q) {
       "pacar" => $row["nnama_pacar"],
       "mantan" => $row["nnama_mantan"],
     ];
-    echo tampilkanPengunjung($fieldConfig, $arrBiodata);
-  }
+    echo tampilkanPengunjung($fieldConfig, $arrPengunjung);
+  
 }
