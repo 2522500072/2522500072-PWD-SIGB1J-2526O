@@ -13,6 +13,8 @@ Pada UAS hari kamis, 29 Januari 2026 saya belajar :
 <li>membuat file proses_pengunjung</li>
 <li>copy kode dari edit_biodata.php ke file edit_pengunjung.php</li>
 <li>menambahkan kode untuk menyesuaikan kode pada file edit_pengunjung.php</li>
+<li>copy kode dari file proses_delete_biodata.php ke file proses_delete_pengunjung.php</li>
+<li>menambahkan kode untuk menyesuaikan kode pada file proses_delete_pengunjung.php</lu>
 
 
 
