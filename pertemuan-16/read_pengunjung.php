@@ -3,7 +3,7 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  $sql = "SELECT * FROM tbl_biodata_mahasiswa_sederhana ORDER BY cid DESC";
+  $sql = "SELECT * FROM tbl_biodata_pengunjung ORDER BY cid DESC";
   $q = mysqli_query($conn, $sql);
   if (!$q) {
     die("Query error: " . mysqli_error($conn));
@@ -36,36 +36,35 @@
     <th>No</th>
     <th>Aksi</th>
     <th>ID</th>
-    <th>NIM</th>
-    <th>Nama Lengkap</th>
-    <th>Tempat Lahir</th>
-    <th>Tanggal Lahir</th>
-    <th>Hobi</th>
-    <th>Pasangan</th>
-    <th>Pekerjaan</th>
-    <th>Nama Orang Tua</th>
-    <th>Nama Kakak</th>
-    <th>Nama adik</th>
+    <th>kodepen</th>
+    <th>nama</th> 
+    <th>tempat</th> 
+    <th>tanggal</th> 
+    <th>hobi</th> 
+    <th>slta</th>
+    <th>pekerjaan</th> 
+    <th>ortu</th>
+    <th>mantan</th> 
   </tr>
   <?php $i = 1; ?>
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
       <td><?= $i++ ?></td>
       <td>
-        <a href="edit_biodata.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama_lengkap']); ?>?')" href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <a href="edit_pengunjung.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nnama_pengunjung']); ?>?')" href="proses_delete_pengunjung.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row>['cnim']); ?></td>
-      <td><?= htmlspecialchars($row['cnama_lengkap']); ?></td>
-      <td><?= htmlspecialchars($row['ctempat_lahir']); ?></td>
-      <td><?= htmlspecialchars($row['ctanggal_lahir']); ?></td>
-      <td><?= htmlspecialchars($row['chobi']); ?></td>
-      <td><?= htmlspecialchars($row['cpasangan']); ?></td>
-      <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
-      <td><?= htmlspecialchars($row['cnama_orang_tua']); ?></td>
-      <td><?= htmlspecialchars($row['cnama_kakak']); ?></td>
-      <td><?= htmlspecialchars($row['cnama_adik']); ?></td
+      <td><?= htmlspecialchars($row>['nkode_pengunjung']); ?></td>
+      <td><?= htmlspecialchars($row['nnama_pengunjung']); ?></td>
+      <td><?= htmlspecialchars($row['nalamat_rumah']); ?></td>
+      <td><?= htmlspecialchars($row['ntanggal_kunjungan,	']); ?></td>
+      <td><?= htmlspecialchars($row['nhobi']); ?></td>
+      <td><?= htmlspecialchars($row['nasal_SLTA']); ?></td>
+      <td><?= htmlspecialchars($row['npekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['nnama_orang_tua']); ?></td>
+      <td><?= htmlspecialchars($row['nnama_pacar']); ?></td>
+      <td><?= htmlspecialchars($row['nnama_mantan']); ?></td
     
     </tr>
   <?php endwhile; ?>
