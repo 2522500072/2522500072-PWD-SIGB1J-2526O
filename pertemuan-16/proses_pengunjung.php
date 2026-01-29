@@ -6,32 +6,33 @@ require_once __DIR__ . '/fungsi.php';
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
-  redirect_ke('index.php#biodata');
+  redirect_ke('index.php#pengunjung');
 }
 
 #ambil dan bersihkan nilai dari form
-$nim  = bersihkan($_POST['txtNim']  ?? '');
-$nama  = bersihkan($_POST['txtNmLengkap']  ?? '');
-$tempat  = bersihkan($_POST['txtT4Lhr']  ?? '');
-$tanggal  = bersihkan($_POST['txtTglLhr']  ?? '');
-$hobi  = bersihkan($_POST['txtHobi']  ?? '');
-$pasangan = bersihkan($_POST['txtPasangan']  ?? '');
-$pekerjaan = bersihkan($_POST['txtKerja']  ?? '');
-$ortu = bersihkan($_POST['txtNmOrtu']  ?? '');
-$kakak= bersihkan($_POST['txtNmKakak']  ?? '');
-$adik= bersihkan($_POST['txtNmAdik']  ?? '');
+$kodepen = bersihkan($_POST["txtKodePen"] ?? '');
+$nama = bersihkan($_POST["txtNmPengunjung"] ?? '');
+$alamat = bersihkan($_POST["txtAlRmh"] ?? '');
+$tanggal = bersihkan($_POST["txtTglKunjungan"] ?? '');
+$hobi = bersihkan($_POST["txtHobi"] ?? '');
+$slta = bersihkan($_POST["txtAsalSMA"] ?? '');
+$pekerjaan = bersihkan($_POST["txtKerja"] ?? '');
+$ortu = bersihkan($_POST["txtNmOrtu"] ?? '');
+$pacar = bersihkan($_POST["txtNmPacar"] ?? '');
+$mantan = bersihkan($_POST["txtNmMantan"] ?? '');
 
 #Validasi sederhana
 $errors = []; #ini array untuk menampung semua error yang ada
 
-if ($nim === '') {
-  $errors[] = 'Nim wajib diisi.';
+
+ if ($kodepen === '') {
+  $errors[] = 'Kode Pengunjung wajib diisi.';
 }
 if ($nama === '') {
-  $errors[] = 'Nama wajib diisi.';
+  $errors[] = 'Nama Pengunjung wajib diisi.';
 }
-if ($tempat === '') {
-  $errors[] = 'Tempat wajib diisi.';
+if ($alamat === '') {
+  $errors[] = 'Alamat wajib diisi.';
 }
 if ($tanggal === '') {
   $errors[] = 'Tanggal wajib diisi.';
@@ -39,25 +40,20 @@ if ($tanggal === '') {
 if ($hobi === '') {
   $errors[] = 'Hobi wajib diisi.';
 }
-if ($pasangan === '') {
-  $errors[] = 'Pasangan wajib diisi.';
+if ($slta === '') {
+  $errors[] = 'Asal SLTA wajib diisi.';
 }
 if ($pekerjaan === '') {
   $errors[] = 'Pekerjaan wajib diisi.';
 }
 if ($ortu === '') {
-  $errors[] = 'Ortu wajib diisi.';
+  $errors[] = 'Nama Ortu wajib diisi.';
 }
-if ($kakak === '') {
-  $errors[] = 'Kakak wajib diisi.';
+if ($pacar === '') {
+  $errors[] = 'Nama Pacar wajib diisi.';
 }
-if ($adik === '') {
-  $errors[] = 'Adik wajib diisi.';
-}
-
-
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
+if ($mantan === '') {
+  $errors[] = 'Nama Mantan wajib diisi.';
 }
 
 /*
@@ -65,18 +61,17 @@ kondisi di bawah ini hanya dikerjakan jika ada error,
 simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
-  $_SESSION['old_biodata'] = [
-    'nim'  => $nim,
+  $_SESSION['old_pengunjung'] = [
+    'kodepen'  => $kodepen,
     'nama'  => $nama,
-    'tempat'  => $tempat,
+    'alamat'  => $alamat,
     'tanggal'  => $tanggal,
     'hobi'  => $hobi,
-    'pasangan'  => $pasangan,
+    'slta'  => $slta,
     'pekerjaan'  => $pekerjaan,
     'ortu'  => $ortu,
-    'kakak'  => $kakak,
-    'adik'  => $adik
-    
+    'pacar'  => $kakak,
+    'mantan'  => $adik
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -84,7 +79,7 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_biodata_mahasiswa_sederhana (cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi, cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO tbl_biodata_pengunjung (nkode_pengunjung, nnama_pengunjung, nalamat_rumah,	ntanggal_kunjungan,	nhobi, nasal_SLTA,	npekerjaan,	nnama_orang_tua, nnama_pacar, nnama_mantan	) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -93,15 +88,15 @@ if (!$stmt) {
   redirect_ke('index.php#biodata');
 }
 #bind parameter dan eksekusi (s = string)
-mysqli_stmt_bind_param($stmt, "ssssssssss",$nim, $nama, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik);
+mysqli_stmt_bind_param($stmt, "ssssssssss",$kodepen, $nama, $alamat, $tanggal, $hobi, $slta, $pekerjaan, $ortu, $pacar, $mantan);
 
 if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesan sukses
-  unset($_SESSION['old_biodata']);
+  unset($_SESSION['old_pengunjung']);
   $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
-  redirect_ke('index.php#biodata'); #pola PRG: kembali ke form / halaman home
+  redirect_ke('index.php#pengunjung'); #pola PRG: kembali ke form / halaman home
 } else { #jika gagal, simpan kembali old value dan tampilkan error umum
-  $_SESSION['old_biodata'] = [
-    'nim'  => $nim,
+  $_SESSION['old_pengunjung'] = [
+   'kodepen'=> $kodepen,
     'nama' => $nama,
     'tempat' => $tempat,
     'tanggal' => $tanggal,
@@ -113,7 +108,7 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
     'adik' => $adik
   ];
   $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
-  redirect_ke('index.php#biodata');
+  redirect_ke('index.php#pengunjung');
 }
 #tutup statement
 mysqli_stmt_close($stmt);

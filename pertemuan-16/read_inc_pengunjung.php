@@ -26,14 +26,14 @@ if (!$q) {
       "kodepen" => $row["nkode_pengunjung"],
       "nama" => $row["nnama_pengunjung"],
       "alamat" => $row["nalamat_pengunjung"],
-      "tanggal" => $row["ctanggal_lahir"],
-      "hobi" => $row["chobi"],
-      "pasangan" => $row["cpasangan"],
-      "pekerjaan" => $row["cpekerjaan"],
-      "ortu" => $row["cnama_orang_tua"],
-      "kakak" => $row["cnama_kakak"],
-      "adik" => $row["cnama_adik"],
+      "tanggal" => $row["ntanggal_kunjungan"],
+      "hobi" => $row["nhobi"],
+      "slta" => $row["nasal_SLTA"],
+      "pekerjaan" => $row["npekerjaan"],
+      "ortu" => $row["nnama_orang_tua"],
+      "pacar" => $row["nnama_pacar"],
+      "mantan" => $row["nnama_mantan"],
     ];
-    echo tampilkanBiodata($fieldConfig, $arrBiodata);
+    echo tampilkanPengunjung($fieldConfig, $arrBiodata);
   }
 }
